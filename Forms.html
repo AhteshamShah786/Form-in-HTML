@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apna College Forms</title>
+  </head>
+  <body>
+    <form action="/action.php">
+      <!--action for back-end-->
+      <h2>Enter your details</h2>
+      <input type="text" placeholder="Username" /> <br />
+      <br />
+      <input type="password" placeholder="password" /> <br />
+      <br />
+      <br />
+
+      <h2>Select Your Class</h2>
+
+      <!-- radio buttons are used when we have to select one option out of many while checkbox is for multiple selections-->
+      <input type="radio" value="Class 9thth" name="Class" /> Class 9th
+      <input type="radio" value="Class 10th" name="Class" /> Class 10th
+      <br /><br />
+      <!--Labels are when you even click on text it will be ticked-->
+      <label for="101">
+        <input type="radio" value="Class 11th" name="Class" id="101" /> Class
+        11th
+      </label>
+
+      <label for="102">
+        <input type="radio" value="Class 12th" name="Class" id="102" /> Class
+        12th
+      </label>
+
+      <br />
+      <br /><br />
+
+      <div id="id1" class="Group1"></div>
+      <div id="id2" class="group2"></div>
+
+      <h2>Select Your Subjects</h2>
+      <label for="Math">
+        <input type = "checkbox" value  = "Math" name = "Subject" id = "101"> Maths
+      </label>
+
+      <label for="Physics">
+        <input type = "checkbox" value = "Physics" name = "Subject" id = "102">
+        Physics
+      </label>
+
+      <label for="Chemistry">
+        <input type = "checkbox" value = "Math" name = "Subject" id = "103">
+        Chemistry
+      </label>
+
+      <label for="Biology">
+        <input type = "checkbox" value ="Math" name = "Subject" id = "104"> Biology
+      </label>
+
+      <br /><br />
+      <h2>Select your city</h2>
+      <select name="City">
+        <option>Sukkur</option>
+        <option>Karachi</option>
+        <option>Lahore</option>
+      </select>
+
+      <br /><br />
+      <textarea
+        name="feedback"
+        id="101"
+        placeholder="Please give your valueable feedback"
+        rows="5"
+      ></textarea>
+
+      <br><br>
+      <input type ="submit" value ="submit">
+
+      <button type = "reset">Reset</button>
+      <button type = "button">Just a button</button>
+    </form>
+  </body>
+</html>
